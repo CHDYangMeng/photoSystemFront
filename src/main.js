@@ -11,7 +11,7 @@ import router from './router.js'
 // 导入vue-resource组件
 import vueResource from 'vue-resource'
 Vue.use(vueResource)
-Vue.http.options.root = 'http://localhost:9000/';
+Vue.http.options.root = 'http://124.70.208.2:9000/';
 Vue.http.options.emulateJSON = true;
 
 // 导入echarts包

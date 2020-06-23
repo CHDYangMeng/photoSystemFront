@@ -96,7 +96,7 @@ export default {
   },
   methods: {
     upload() {
-      return "http://localhost:9000/UploadFile"
+      return "http://124.70.208.2:9000/UploadFile"
     },
     success(response, file) {
       
@@ -138,7 +138,7 @@ export default {
           duration: 1000
         });
       } else {
-        this.$http.post('http://localhost:9000/pageComponent4', {path: this.path}).then( result => {
+        this.$http.post('pageComponent4', {path: this.path}).then( result => {
           if (result.body.status == 200) {
             var respResult_1 = JSON.parse(result.body.response);
             var respResult_2 = respResult_1.result;
